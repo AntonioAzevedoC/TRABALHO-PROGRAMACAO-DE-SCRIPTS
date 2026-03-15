@@ -1,0 +1,137 @@
+/* .__main-body {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.__item-produto {
+  background-color: purple;
+  padding: 10px;
+  margin: 10px;
+} */
+
+.__main-body-products {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.__item-produto {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.__item-produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.__item-produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #f8b400;
+}
+
+.__item-produto div {
+  padding: 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.__item-produto h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.__item-produto h4:first-of-type {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.__item-produto h4:last-of-type {
+  color: #f8b400;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: #2c3e50;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Estados de estoque */
+.__item-produto.__em-estoque {
+  border-color: #4caf50;
+}
+
+.__item-produto.__faltando h4 {
+  opacity: 0.7;
+  border-color: #f44336;
+  background-color: #f5f5f5;
+  text-decoration: line-through;
+}
+
+.__faltando img {
+  filter: grayscale(1);
+}
+
+.__faltando h4:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .__main-body-products {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .__item-produto img {
+    height: 180px;
+  }
+
+  .__item-produto h4 {
+    font-size: 1.1rem;
+  }
+
+  .__item-produto h4:first-of-type {
+    font-size: 1.2rem;
+  }
+
+  .__item-produto h4:last-of-type {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .__main-body-products {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .__item-produto.__faltando::before {
+    font-size: 0.7rem;
+    padding: 0.4rem 1.5rem;
+    top: 15px;
+    right: -30px;
+  }
+}

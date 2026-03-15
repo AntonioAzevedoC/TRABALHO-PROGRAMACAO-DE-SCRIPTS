@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "nome": "Carne",
+    "preco": "12,00",
+    "estoque": true,
+    "imagem": "../../public/pastel.png"
+  },
+  {
+    "id": 2,
+    "nome": "Queijo",
+    "preco": "11,50",
+    "estoque": true,
+    "imagem": "../../public/pastel.png"
+  },
+  {
+    "id": 3,
+    "nome": "Frango com Catupiry",
+    "preco": "13,00",
+    "estoque": true,
+    "imagem": "../../public/pastel.png"
+  },
+  {
+    "id": 4,
+    "nome": "Pizza",
+    "preco": "12,50",
+    "estoque": false,
+    "imagem": "../../public/pastel.png"
+  },
+  {
+    "id": 5,
+    "nome": "Calabresa",
+    "preco": "12,00",
+    "estoque": true,
+    "imagem": "../../public/pastel.png"
+  },
+  {
+    "id": 6,
+    "nome": "Palmito",
+    "preco": "13,50",
+    "estoque": true,
+    "imagem": "../../public/pastel.png"
+  },
+  {
+    "id": 7,
+    "nome": "Camarão",
+    "preco": "16,00",
+    "estoque": false,
+    "imagem": "../../public/pastel.png"
+  },
+  {
+    "id": 8,
+    "nome": "Chocolate",
+    "preco": "10,00",
+    "estoque": true,
+    "imagem": "../../public/pastel.png"
+  },
+  {
+    "id": 9,
+    "nome": "Banana com Canela",
+    "preco": "10,50",
+    "estoque": true,
+    "imagem": "../../public/pastel.png"
+  }
+]
